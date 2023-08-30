@@ -78,20 +78,12 @@
 							$65k/year
 						</dd>
 					</div>
-					<!-- <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-						<dt class="text-base leading-7">After completing a bootcamp</dt>
-						<dd
-							class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
-						>
-							$20k +
-						</dd>
-					</div> -->
 				</dl>
 			</div>
 		</div>
 	</div>
 </Slide>
-<Slide>
+<Slide animate>
 	<div class="flex flex-col justify-between h-full">
 		<h1 data-id="1" class="font-bold text-3xl mb-4">Some Stats</h1>
         <p class="!text-2xl">
@@ -120,7 +112,7 @@
 							$65k/year
 						</dd>
 					</div>
-					<div class="mx-auto flex max-w-xs flex-col gap-y-4">
+					<div data-id="4" class="mx-auto flex max-w-xs flex-col gap-y-4">
 						<dt class="text-base leading-7">After completing a bootcamp</dt>
 						<dd
 							class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
