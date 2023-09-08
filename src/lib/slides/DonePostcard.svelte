@@ -1,30 +1,4 @@
-<script>
-	import Cssawesome from './Cssawesome.svelte'
-
-	import Htmllogo from './Htmllogo.svelte'
-
-	import { Slide, Code } from '@components'
-</script>
-
-<Slide animate>
-	<div class="flex items-center justify-between w-full">
-		<Cssawesome />
-		<p class="font-black text-9xl w-full">+</p>
-		<p />
-		<Htmllogo />
-	</div>
-</Slide>
-<!-- Slide 1: Title Slide -->
-<Slide animate>
-	<p
-		class="border-[5px] w-[310px] h-fit p-8 space-y-5 mx-auto text-7xl font-bold uppercase leading-[1.15]"
-	>
-		css is awesome
-	</p>
-</Slide>
-
-<!-- Slide 2: CSS -->
-<Slide animate>
+<div class="window w-fit grid place-content-center !text-base">
 	<div class="postcard">
 		<header>
 			<h1>My Postcard</h1>
@@ -41,7 +15,7 @@
 				</p>
 				<p>This is so cool! I can't wait to start doing more stuff!</p>
 			</div>
-			<form class="right" action="#your-action-here" method="POST">
+			<form class="right" action="/" method="POST">
 				<input type="text" placeholder="To: Jr. and Lani" />
 				<input type="text" placeholder="example@x.com" />
 				<input type="text" placeholder="Mommy loves you!" />
@@ -49,29 +23,7 @@
 		</main>
 		<button type="submit" form="form1">Send My Postcard</button>
 	</div>
-</Slide>
-
-<Slide animate>
-	<div class="flex">
-		<Code data-id="1" lang="html" class="w-1/2" lines="2,11|3-7|8-10">
-			{`
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Postcard</title>
-		<link rel="stylesheet"
-		href="styles.css" />
-	</head>
-	<body>
-		...content
-	</body>
-</html>
-			  `}
-		</Code>
-
-		<div class="border-[1px] w-1/2 grid place-content-center">...content</div>
-	</div>
-</Slide>
+</div>
 
 <style>
 	.postcard {
@@ -81,11 +33,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 450px;
-		height: 340px;
+		height: fit-content;
 		background: white;
 		margin: auto;
 		color: black;
-		font-size: 14px !important;
 	}
 
 	header {
@@ -137,6 +88,12 @@
 		border: none;
 		border-bottom: 1px rgb(255, 23, 62) solid;
 		width: 100%;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 
 	button {

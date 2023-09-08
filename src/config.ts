@@ -7,10 +7,10 @@ import { registerLanguages } from '@languages'
 
 const options: Reveal.Options = {
 	// presentation size respecting aspect ratio
-	width: 960,
-	height: 700,
+	width: 1200,
+	height: 675,
 	// content padding
-	margin: 0.04,
+	margin: 0.01,
 	// smallest and largest possible scale
 	minScale: 0.2,
 	maxScale: 2.0,
