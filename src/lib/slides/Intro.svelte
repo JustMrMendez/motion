@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Code, Slide, FormsDraw } from '@components'
-	import Media from '@lib/components/media.svelte'
 
 	let howMany
 	let results = []
@@ -34,16 +33,99 @@
 	</div>
 </Slide>
 
-<Slide>
-	<h1 class="text-7xl font-black">Forms</h1>
+<Slide animate>
 	<!-- <div data-id="1" class="mx-auto max-w-xl">
 		<FormsDraw />
 	</div> -->
-	<Media src="/form-elements.png" type="img" class="w-full h-full">
-
-	</Media>
+	<!-- show all the form elements using -->
+		<Code data-id="2" lang="html" lines="1,15|2|3|7-14|4|5" class="">
+			{`
+				<form method="POST|GET" action="/URL">
+					<input 
+						type="text" 
+						name="name"
+						placeholder="name" 
+					/>
+					<input type="email" name="email" />
+					<input type="password" name="password" />
+					<input type="number" name="age" />
+					<input type="date" name="date" />
+					<input type="range" name="range" />
+					<input type="checkbox" name="checkbox" />
+					<input type="radio" name="radio" />
+					<input type="file" name="file" />
+				</form>
+			`}
+		</Code>	
 </Slide>
 
+<Slide animate>
+		<Code data-id="2" lang="html" lines="2" class="">
+			{`
+				<form>
+					<label for="name">Name</label>
+					<input 
+						type="text" 
+						name="name"
+						placeholder="name" 
+					/>
+					
+				</form>
+			`}
+		</Code>	
+</Slide>
+<Slide animate>
+	<Code data-id="2" lang="html" lines="8,11|9-10" class="">
+		{`
+			<form>
+				<label for="name">Name</label>
+				<input 
+					type="text" 
+					name="name"
+					placeholder="name" 
+				/>
+				<select name="cars" id="cars">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+				</select>
+			</form>
+		`}
+	</Code>	
+</Slide>
+
+<Slide animate>
+	<Code data-id="2" lang="html" lines="8" class="">
+		{`
+			<form>
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="name" />
+				<select name="cars" id="cars">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+				</select>
+				<button type="submit">Submit</button>
+
+			</form>
+		`}
+	</Code>	
+</Slide>
+
+<Slide animate>
+	<Code data-id="2" lang="html" lines="9" class="">
+		{`
+			<form>
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="name" />
+				<select name="cars" id="cars">
+					<option value="volvo">Volvo</option>
+					<option value="saab">Saab</option>
+				</select>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		`}
+	</Code>	
+</Slide>
 
 <Slide animate>
 	<div class="flex max-h-[90vh] h-[60vh] w-full gap-10">
@@ -98,7 +180,7 @@
 		<div id="data-container" class="w-1/2 flex-grow h-full overflow-y-scroll">
 			<!-- <FormsDraw /> -->
 			{#key results}
-				<Code lang="json">
+				<Code data-id="2" lang="json" class="">
 					{JSON.stringify(results, null, 2)}
 				</Code>
 			{/key}
