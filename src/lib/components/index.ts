@@ -9,6 +9,8 @@ import Stack from './stack.svelte'
 import Step from './step.svelte'
 import Stretch from './stretch.svelte'
 import Vertical from './vertical.svelte'
+import Htmllogo from './logos/Htmllogo.svelte'
+import FormsDraw from './draws/FormsDraw.svelte'
 
 export {
 	Code,
@@ -22,4 +24,6 @@ export {
 	Step,
 	Stretch,
 	Vertical,
+	Htmllogo,
+	FormsDraw
 }
